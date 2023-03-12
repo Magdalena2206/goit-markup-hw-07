@@ -1,1 +1,1 @@
-https://magdalena2206.github.io/goit-markup-hw-06/
+https://magdalena2206.github.io/goit-markup-hw-07/
