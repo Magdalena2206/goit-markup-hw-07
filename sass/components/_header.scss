@@ -19,7 +19,7 @@
   text-decoration: none;
 }
 
-.logo__link--text {
+&__link--text {
   color: #212121;
 }
 
@@ -39,7 +39,7 @@
     padding-right: 23px;
 padding-left: 23px;}
 
-.part__link{
+&__link{
     color: #212121;
     font-size: 14px;
     line-height: 100%;
@@ -48,7 +48,7 @@ padding-left: 23px;}
     transition-timing-function: $transitionTiming;
 }
 
-.part__link:hover{
+&__link:hover{
     color: $borderColor;
 }
 

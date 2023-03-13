@@ -1,8 +1,38 @@
 .last {
   display: flex;
   flex-direction: row;
+  &__part2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 72px;
+  }
+  &__item {
+    color: $backgroundColor;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    padding-bottom: 10px;
+  }
+  
+  &__icon {
+    width: 40px;
+    height: 40px;
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  &__input {
+    padding: 15px;
+    margin-left: 78px;
+    width: 358px;
+    border: $borderSize rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $footerColor;
+  }
 }
-.last__part1 {
+&__part1 {
   padding-right: 70px;
 }
 
@@ -23,8 +53,8 @@
   flex-direction: column;
   padding-bottom: 60px;
   justify-items: center;
-}
-.address__link {
+
+&__link {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
@@ -34,41 +64,23 @@
   transition-duration: $transitionDuration;
   transition-timing-function: $transitionTiming;
 }
-
+&__street {
+  padding-bottom: 9px;
+}
+&__mail {
+  padding-bottom: 9px;
+  text-decoration: underline;
+}
+}
 .address__link:hover {
   color: $borderColor;
   text-decoration: none;
 }
 
-.address__street {
-  padding-bottom: 9px;
-}
 
-.address_mail {
-  padding-bottom: 9px;
-  text-decoration: underline;
-}
-.last__part2 {
-  display: flex;
-  flex-direction: column;
-  padding-top: 72px;
-}
-.last__item {
-  color: $backgroundColor;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  padding-bottom: 10px;
-}
 
-.last__icon {
-  width: 40px;
-  height: 40px;
-  transition-duration: $transitionDuration;
-  transition-timing-function: $transitionTiming;
-  padding-left: 10px;
-  padding-top: 10px;
-}
+
+
 .last__icon:hover {
   color: $backgroundColor;
   background-color: $borderColor;
@@ -89,15 +101,7 @@
   padding-top: 72px;
   padding-left: 78px;
 }
-.last__input {
-  padding: 15px;
-  margin-left: 78px;
-  width: 358px;
-  border: $borderSize rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: $footerColor;
-}
+
 .last__part3 ::placeholder {
   color: $backgroundColor;
 }
