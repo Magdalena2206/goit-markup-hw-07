@@ -11,8 +11,7 @@
     flex-direction: row;
   }
   
- 
-  .mark {
+   .mark {
     border-radius: 4px;
     width: 170px;
     height: 92px;
@@ -21,9 +20,7 @@
     border: 1px solid #afb1b8;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-  }
-  .mark__icon{
+  &__icon{
     width: 90px;
     height: 90px;
     display: block;
@@ -31,7 +28,7 @@
     margin: auto;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+}}
   .mark:hover {
     border: 1px solid #2196f3;
     border-radius: 4px;
