@@ -1,0 +1,41 @@
+.clients__heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: var(--black);
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .clientslogo {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo__icon {
+    
+  }
+  
+  .logo {
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #afb1b8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__icon{
+        width: 90px;
+        height: 90px;
+        display: block;
+        padding-top: 20px;
+        margin: auto;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  .logo:hover {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+    cursor: pointer;
+    --color2: var(--blue);
+  }

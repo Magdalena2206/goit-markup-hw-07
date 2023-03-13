@@ -1,1 +1,37 @@
-@import './components/navigations';
+@import './components/header';
+@import './components/modal';
+@import './components/lorem';
+@import './components/whatwedo';
+@import './components/ourteam';
+@import './components/clients';
+@import './components/footer';
+@import './components/button';
+@import './components/card';
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+
+  footer {
+    background-color: var(--grey2);
+    height: 252px;
+  }
+  a {
+    color: var(--black);
+    cursor: pointer;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 171%;
+    font-weight: 700;
+  }
+  
+  p {
+    color: var(--grey);
+    font-size: 16px;
+    line-height: 160%;
+    font-weight: 400;
+  }
