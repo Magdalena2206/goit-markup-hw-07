@@ -4,7 +4,7 @@
         font-size: 36px;
         font-weight: 700;
         line-height: 100%;
-        color: var(--black);
+        color: $fontColor;
         text-align: center;
         padding-bottom: 50px;
     }
@@ -24,7 +24,7 @@
   }
   
   .signature > .signature__heading {
-    color: var(--white);
+    color: $backgroundColor;
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;

@@ -67,14 +67,18 @@ padding-left: 23px;}
     flex-direction: row;
     
   }
-  .data{
+  .data {
+ 
     display: flex;
+    
     flex-direction: row;
     padding-left: 15px;
     padding-right: 15px;
+  
     &__icon{
         width: 21px;
         height: 16px;
+        
     }
     &__link{
         color:#757575;
@@ -83,8 +87,8 @@ padding-left: 23px;}
         text-decoration: none;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__link:hover{
+    }}
+    .data__link:hover{
         color: #2196f3;
     }
-}
+

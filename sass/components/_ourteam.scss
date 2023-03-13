@@ -6,7 +6,7 @@
         font-size: 36px;
         font-weight: 700;
         line-height: 100%;
-        color: var(--black);
+        color: $fontColor;
         text-align: center;
         padding-bottom: 50px;
     }
@@ -20,9 +20,9 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     height: 428px;
-    background-color: var(--white);
+    background-color: $backgroundColor;
     border-radius: 0px 0px 4px 4px;
-    margin-inline: 30px;
+    margin-inline: 15px;
     &__img{
         height: 260px;
     width: 270px;
@@ -30,15 +30,17 @@
     &__heading{
         font-size: 16px;
         line-height: 100%;
-        color: var(--black);
+        color: $fontColor;
         padding-top: 10px;
+        text-align: center;
     }
     &__item{
         font-size: 16px;
         font-weight: 400;
         line-height: 100%;
-        color: var(--grey);
+        color: #757575;
         padding-top: 10px;
+        text-align: center;
     }
   }
   .social {
@@ -63,10 +65,10 @@
         padding-left: 8px;
     }
     &__icon:hover{
-        --color2: var(--white);
-        background-color: var(--blue);
-        border: 1px var(--blue);
-        cursor: pointer;
+        --color2: $backgroundColor;
+        background-color: $borderColor;
+        border: 1px $borderColor;
+        cursor: $cursorType;
         width: 40px;
         height: 40px;
         border-radius: 50%;
