@@ -10,7 +10,7 @@
   &__one--d {
     flex-direction: row;
   }
-  .box {
+  .boxes {
     border: #eeeeee $borderSize;
     margin-bottom: 30px;
     position:relative;
@@ -40,8 +40,8 @@
         height: 294px;
       }
   }
-
-  .box .technocrack {
+  
+  .boxes .technocrack {
     visibility: hidden;
     position:absolute;
     width: 370px;
@@ -51,7 +51,7 @@
     background: rgba(33, 150, 243, 0.9);
   
   }
-  .box:hover .technocrack {
+  .boxes:hover .technocrack {
     visibility: visible;
     content: "";
     position:absolute;
@@ -93,7 +93,7 @@
   }
 
   
-  .box:hover {
+  .boxes:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: $cursorType;
