@@ -1,22 +1,14 @@
 .card {
     display: flex;
     flex-direction: row;
+    &__one{
+        flex-direction: row;
+        margin-right: 30px;
+    }
+
   }
-  
-  .box__heading {
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 4px;
-    position: relative;
-    z-index: 10;
-  }
-  .box__item {
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    position: relative;
-    z-index: 10;
+  .card__one--d {
+    flex-direction: row;
   }
   .box {
     border: #eeeeee $borderSize;
@@ -24,15 +16,31 @@
     position:relative;
     top: 0;
     right: 0;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
       position: relative;
       z-index: 1;
+      &__item{
+        padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    z-index: 10;
+      }
+      &__heading{
+        padding-top: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 4px;
+        position: relative;
+        z-index: 10;
+      }
+      &__img{
+        width: 370px;
+        height: 294px;
+      }
   }
-  .box__img {
-    width: 370px;
-    height: 294px;
-  }
+
   .box .technocrack {
     visibility: hidden;
     position:absolute;
@@ -83,22 +91,13 @@
       
     }
   }
-  .card__one {
-    flex-direction: row;
-    margin-right: 30px;
-  }
+
   
   .box:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: $cursorType;
   }
-  .card__two {
-    flex-direction: row;
-    margin-right: 30px;
-  }
+ 
   
   
-  .card__three {
-    flex-direction: row;
-  }

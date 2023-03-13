@@ -37,8 +37,7 @@
     left: 0;
     position: fixed;
   }
-  
-  .window {
+    .window {
     background-color: $backgroundColor;
     border-radius: 4px;
     width: 528px;
@@ -53,7 +52,7 @@
         line-height: 100%;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--black);
+        color: $fontColor;
         margin-top: 40px;
         margin-bottom: 12px;
     }}
@@ -66,29 +65,29 @@
         &__word{
     line-height: 100%;
     letter-spacing: 0.01em;
-    color: var(--grey);
+    color: #757575;
     margin-top: 10px;
       margin-bottom: 4px;
       font-size: 12px;
         }
         &__input{
             height: 40px;
-            border: 1px solid rgba(33, 33, 33, 0.2);
+            border: $borderSize rgba(33, 33, 33, 0.2);
             border-radius: 4px;
             padding-left: 35px;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: $transitionDuration;
+            transition-timing-function: $transitionTiming;
         }
         &__icon{
             width: 15px;
             height: 13px;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+            transition-duration: $transitionDuration;
+            transition-timing-function: $transitionTiming;
         }
     }
     .data2__input:focus{
     
-        outline: 1px solid #2196f3;
+        outline:$borderSize $borderColor;
       }
     
       
@@ -130,7 +129,7 @@
     background-color: $backgroundColor;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;
+    cursor: $cursorType;
   }
 
   
@@ -145,16 +144,16 @@
     font-size: 12px;
   line-height: 100%;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: $inputColor;
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: $inputColor;
   margin-bottom: 4px;
   &__word{
     line-height: 100%;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: $inputColor;
   margin-top: 10px;
     margin-bottom: 4px;
     font-size: 12px;
@@ -163,17 +162,17 @@
   
   textarea{
     width: 448px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: $borderSize rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
   padding-left: 16px;
   padding-top: 12px;
   color: rgba(117, 117, 117, 0.5);
-  transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
   }
   textarea:focus{
-    outline: 1px solid #2196f3;
+    outline: $borderSize $borderColor;
   }
   
   .box__accept {
@@ -188,13 +187,13 @@
     font-size: 14px;
     line-height: 171%;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: $inputColor;
     position: relative;
     top:16px;
     left: 25px;
   }
   .colour2{
-    color: #2196f3;
+    color: $borderColor;
     text-decoration: underline;
   }
   .box__check{
@@ -204,8 +203,8 @@
     top: 19px;
     opacity: 0;
     left:59px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: $transitionDuration;
+    transition-timing-function: $transitionTiming;
     z-index:10;
   }
   .box__accept::before{
@@ -213,7 +212,7 @@
     width: 15px;
     height: 15px;
     display: inline-block;
-    border: solid 1px $fontColor;
+    border: $borderSize $fontColor;
     position: absolute;
     left: 0;
     top: 20px;
@@ -239,15 +238,15 @@
   }
   
   .box__check:focus + .box__accept::before{
-  outline: #2196f3 auto 5px;
-    background: #2196f3;
+  outline: $borderColor auto 5px;
+    background: $borderColor;
     
   }
   .button--send{
     
   width: 200px;
   height: 50px;
-  background-color: #2196f3;
+  background-color: $borderColor;
   color: $backgroundColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
