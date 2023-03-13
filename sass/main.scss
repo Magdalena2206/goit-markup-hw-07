@@ -1,27 +1,22 @@
-@import './components/header';
-@import './components/modal';
-@import './components/lorem';
-@import './components/whatwedo';
-@import './components/ourteam';
-@import './components/clients';
-@import './components/footer';
-@import './components/button';
-@import './components/card';
+@use './components/header';
+@use './components/footer';
+@use './components/clients';
+
 
 body {
-    background-color: var(--white);
-    color: var(--black);
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    background-color:$backgroundColor;
+    color: $fontColor;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
   }
 
   footer {
-    background-color: var(--grey2);
+    background-color: $footerColor;
     height: 252px;
   }
   a {
-    color: var(--black);
-    cursor: pointer;
+    color: $fontColor;
+    cursor: $cursorType;
   }
   h3 {
     font-size: 18px;
@@ -30,8 +25,25 @@ body {
   }
   
   p {
-    color: var(--grey);
+    color: #757575;
     font-size: 16px;
     line-height: 160%;
     font-weight: 400;
   }
+  .section{
+    padding-top: $paddingSection;
+  padding-bottom: $paddingSection;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+    max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  inline-size: 100%;
+}
