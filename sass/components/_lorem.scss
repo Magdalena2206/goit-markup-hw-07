@@ -24,13 +24,13 @@
         font-weight: 700;
         font-size: 14px;
         line-height: 100%;
-        color: var(--black);
+        color: $fontColor;
         margin-top: 55px;
     }
     &__item{
         font-weight: 400;
         font-size: 14px;
         line-height: 171%;
-        color: var(--grey);
+        color: #2f303a;
     }
 }

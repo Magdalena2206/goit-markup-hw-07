@@ -11,14 +11,14 @@
     width: 1200px;
 }
 .logo__link {
-  color: #2196f3;
+  color: $borderColor;
   font-family: "Relaway", sans-serif;
   font-size: 26px;
   line-height: 100%;
   font-weight: 700;
   text-decoration: none;
 }
- 
+
 .logo__link--text {
   color: #212121;
 }
